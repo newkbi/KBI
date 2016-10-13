@@ -1,0 +1,19 @@
+node.name: standalone
+node.master: true
+node.data: true
+
+index.number_of_shards: 5
+index.number_of_replicas: 0
+index.mapper.dynamic: true
+index.refresh_interval: "1s"
+
+action.auto_create_index: true
+action.disable_shutdown: true
+
+network.host: localhost
+transport.tcp.port: 9300
+transport.tcp.compress: true
+http.port: 9200
+http.enable: true
+
+gateway.type: local
